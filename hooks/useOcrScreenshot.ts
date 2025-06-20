@@ -49,6 +49,7 @@ export const useOcrScreenshot = (): UseOcrScreenshotReturn => {
     // const text = await Clipboard.getStringAsync();
     const imageUri = await getImageFromClipboard();
     console.log('imageUri', imageUri);
+    console.log('imageUri', imageUri);
     const result = await recognizeText(imageUri);
     console.log('uri', result);
     return result.map(item => item.text);
