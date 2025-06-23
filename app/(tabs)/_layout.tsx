@@ -28,38 +28,47 @@ export default function TabLayout() {
 			}}
 		>
 			<Tabs.Screen
-				name="index"
+				name="details"
 				options={{
-					title: "Home",
+					title: "明细",
 					tabBarIcon: ({ color }) => (
-						<IconSymbol size={28} name="house.fill" color={color} />
-					),
-				}}
-			/>
-			<Tabs.Screen
-				name="explore"
-				options={{
-					title: "Explore",
-					tabBarIcon: ({ color }) => (
-						<IconSymbol size={28} name="paperplane.fill" color={color} />
+						<IconSymbol size={28} name="list.bullet" color={color} />
 					),
 				}}
 			/>
 			<Tabs.Screen
 				name="statistic"
 				options={{
-					title: "Statistic",
+					title: "统计",
 					tabBarIcon: ({ color }) => (
-						<IconSymbol size={28} name="paperplane.fill" color={color} />
+						<IconSymbol size={28} name="chart.bar" color={color} />
 					),
 				}}
 			/>
 			<Tabs.Screen
-				name="details"
+				name="add"
 				options={{
-					title: "Details",
+					title: "",
 					tabBarIcon: ({ color }) => (
-						<IconSymbol size={28} name="paperplane.fill" color={color} />
+						<IconSymbol size={32} name="plus.circle.fill" color={color} />
+					),
+				}}
+			/>
+			<Tabs.Screen
+				name="explore"
+				options={{
+					title: "发现",
+					tabBarIcon: ({ color }) => (
+						<IconSymbol size={28} name="safari" color={color} />
+					),
+				}}
+			/>
+			<Tabs.Screen
+				name="mine"
+				options={{
+					title: "我的",
+					tabBarIcon: ({ color }) => (
+						<IconSymbol size={28} name="person.crop.circle" color={color} />
 					),
 				}}
 			/>
