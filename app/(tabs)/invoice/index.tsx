@@ -1,10 +1,18 @@
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
+import { HorizontalDate } from "@/components/HorizontalDate/indext";
+import { ScrollView, StyleSheet, View } from "react-native";
 
 export default function InvoiceScreen() {
 	return (
-		<ThemedView>
-			<ThemedText>账单首页</ThemedText>
-		</ThemedView>
+		<ScrollView>
+			<View style={styles.container}>
+				<HorizontalDate />
+			</View>
+		</ScrollView>
 	);
 }
+
+const styles = StyleSheet.create({
+	container: {
+		height: 100,
+	},
+});
